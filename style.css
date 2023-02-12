@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: #edc4b3;
+}
+
+header h1 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 2.75em;
+  color: #ff6b6b;
+  letter-spacing: 3px;
+}
+
+header img {
+  height: 3.25em;
+}
+
+.container {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* Menu Styles */
+
+.shop-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.shop-menu-item img {
+  height: 5.2em;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details > * {
+  margin: 0 0 7px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.add-btn {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  border: 1px solid #4ecdc4;
+  background-color: #0000;
+  color: #1a535c;
+}
+
+/* Order Summary Styles */
+
+.order-summary h2 {
+  text-align: center;
+}
+
+.order-items {
+  border-bottom: 1px solid #000;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.remove-btn {
+  color: #1a535c;
+  background-color: #0000;
+  border: none;
+}
+
+.order-item p {
+  margin-left: auto;
+}
+
+.wide-btn {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #4ecdc4;
+  color: #fff;
+  padding: 0.8em 0;
+  border: none;
+  text-shadow: 0 0 2px #000;
+  letter-spacing: 2px;
+  border-radius: 0.5em;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+/* Payment modal styles */
+
+.payment-form-modal {
+  background-color: #fff;
+  padding: 1em;
+  width: 30rem;
+  margin: auto;
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0px 50px 50px darkgray;
+}
+
+.payment-form-modal h2 {
+  text-align: center;
+}
+
+.payment-form-modal input {
+  width: 100%;
+  padding: 1em;
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+  border: 2px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.payment-btn {
+  margin-top: 1.3em;
+}
+
+/* Completed order styles */
+.order-complete-msg {
+  font-size: 1.2rem;
+  background-color: #99e2dd;
+  color: #1a535c;
+  padding: 3em 2em;
+  text-align: center;
+}

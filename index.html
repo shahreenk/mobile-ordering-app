@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sips Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Sips Coffee Shop</h1>
+      <img src="images/cafe.png" />
+    </header>
+    <div class="container">
+      <div class="shop-menu"></div>
+      <div class="order-summary">
+        <h2>Your Order</h2>
+        <div class="order-items"></div>
+        <div class="order-total">
+          <h3>Total Price:</h3>
+          <p class="total-price price"></p>
+        </div>
+        <button id="order-btn" class="wide-btn">Complete Order</button>
+      </div>
+      <div class="payment-form-modal">
+        <form>
+          <h2>Enter Card Details</h2>
+          <input
+            id="name-input"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+          <input type="number" placeholder="Enter card number" required />
+          <input type="number" placeholder="Enter CVV" required />
+          <button id="pay-btn" class="wide-btn payment-btn">Pay</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
